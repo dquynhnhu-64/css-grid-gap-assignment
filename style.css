@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.example-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Base style cho container */
+.grid-container {
+    display: grid;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Style cho các ô con */
+.grid-container div {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* ===== VÍ DỤ 1: grid-gap 20px ===== */
+.grid-ex1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Tương đương: grid-row-gap: 20px; grid-column-gap: 20px; */
+}
+
+.grid-ex1 div {
+    background-color: lightblue;
+    color: #023e8a;
+}
+
+/* ===== VÍ DỤ 2: grid-gap 30px 10px ===== */
+.grid-ex2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px; /* 30px khoảng cách hàng, 10px khoảng cách cột */
+}
+
+.grid-ex2 div {
+    background-color: lightgreen;
+    color: #1b4332;
+}
