@@ -1,0 +1,63 @@
+/* Tùy chỉnh CSS bổ sung */
+
+/* Smooth scroll khi bấm link menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Đường gạch ngang phân chia tiêu đề */
+.divider {
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+/* Tùy chỉnh ảnh bìa sách */
+.book-cover {
+    max-height: 420px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: translateY(-8px);
+}
+
+/* Tùy chỉnh ảnh tác giả */
+.avatar {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Hộp icon trong phần Features */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hiệu ứng hover cho thẻ Features */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive bổ sung cho màn hình siêu nhỏ */
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .avatar {
+        width: 160px;
+        height: 160px;
+    }
+}
